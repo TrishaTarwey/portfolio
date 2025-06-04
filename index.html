@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trisha Tarwey | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: 'Poppins', sans-serif;
+      background: #0f111a;
+      color: #cfd8dc;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: transparent;
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto 30px auto;
+      box-shadow: 0 0 8px #00fff7aa, 0 0 15px #00fff7aa;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+      padding: 15px 10px;
+      margin: 0;
+      backdrop-filter: blur(10px);
+    }
+
+    nav ul li {
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      text-transform: uppercase;
+      color: #00fff7e0;
+      text-shadow: 0 0 5px #00fff7aa, 0 0 10px #00fff7aa;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li:hover {
+      color: #00b8b8;
+      text-shadow: 0 0 8px #00b8b8, 0 0 15px #00b8b8;
+    }
+
+    nav ul li a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 900px;
+      width: 100%;
+      background: #141927;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 40px #00fff7aa;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      border-left: 5px solid #00fff7;
+      padding-left: 12px;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    p, ul.cert-list li {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #b0bec5;
+    }
+
+    ul.cert-list {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .skill {
+      background: #003737;
+      color: #a7fffb;
+      padding: 10px 16px;
+      border-radius: 25px;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 1rem;
+      color: #65737e;
+    }
+
+    /* 📱 Responsive for Mobile */
+    @media (max-width: 600px) {
+      body {
+        padding: 15px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+      }
+
+      h1 {
+        font-size: 2rem;
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      .container {
+        padding: 20px 20px;
+      }
+
+      .skills-grid {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <section id="about">
+      <h1>Trisha Tarwey</h1>
+      <p>Web Developer | BCA Graduate</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">PHP</div>
+        <div class="skill">MySQL</div>
+        <div class="skill">React</div>
+        <div class="skill">Bootstrap</div>
+        <div class="skill">Git & GitHub</div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div>
+        <h3>Lost and Found Website</h3>
+        <p>A fully functional web app for reporting lost & found items with login system, built using PHP, MySQL, and Bootstrap.</p>
+        <p><a href="https://github.com/TrishaTarwey/lost-and-found" target="_blank" style="color:#00fff7;">GitHub Link</a></p>
+      </div>
+    </section>
+
+    <section id="certificates">
+      <h2>Certificates</h2>
+      <ul class="cert-list">
+        <li>Web Development Certificate - Internshala</li>
+        <li>Project Management Certificate - Google</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:trisha.tarwey@gmail.com" style="color:#00fff7;">trisha.tarwey@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/trisha-tarwey-1874b524a" target="_blank" style="color:#00fff7;">www.linkedin.com/in/trisha-tarwey-1874b524a</a></p>
+    </section>
+  </div>
+
+
+
+</body>
+</html>
